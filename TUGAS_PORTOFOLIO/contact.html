@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nama Anda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portofolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+  <div class="main-content">
+    <section class="contact">
+      <h2>Form Request Project</h2>
+      <form>
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Jenis Layanan:</label>
+        <select name="layanan" required>
+          <option value="">Pilih layanan</option>
+          <option value="website">Pembuatan Website</option>
+          <option value="konsultasi">Konsultasi Teknologi</option>
+          <option value="review">Review Portfolio</option>
+        </select>
+        <label>Deskripsi Proyek:</label>
+        <textarea name="deskripsi" rows="4" required></textarea>
+        <label>Pilih kebutuhan lain:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="responsive"> Website Responsive</label>
+          <label><input type="checkbox" name="cms"> Ada CMS</label>
+          <label><input type="checkbox" name="admin"> Ada Admin</label>
+        </div>
+        <label>Timeline Project:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="timeline" value="cepat"> Urgent (&lt; 1 bulan)</label>
+          <label><input type="radio" name="timeline" value="sedang"> 1-3 bulan</label>
+          <label><input type="radio" name="timeline" value="lama"> &gt; 3 bulan</label>
+        </div>
+        <button type="submit">Kirim Request</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>© 2025 Khasyi | <a href="https://itpln.ac.id" target="_blank">ITPLN</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  background: #2563eb;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin: 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 9px 16px;
+  transition: background 0.2s;
+  border-radius: 6px;
+  display: inline-block;
+}
+.navbar a.active, .navbar a:hover {
+  background: #1e40af;
+}
+section {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  margin: 32px auto 0 auto;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(30,64,175,.08);
+}
+.hero {
+  text-align: center;
+  padding-bottom: 0;
+}
+.profile-photo {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.about-me ul {
+  margin: 8px 0 0 0;
+  padding-left: 22px;
+}
+.skill-list div {
+  margin-bottom: 13px;
+}
+.skills progress {
+  width: 80%;
+  height: 16px;
+}
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 9px 8px;
+  text-align: left;
+}
+th {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+@media (max-width: 650px) {
+  section {
+    max-width: 98vw;
+    padding: 16px 2vw;
+    border-radius: 7px;
+  }
+  .hero .profile-photo {
+    width: 70px;
+    height: 70px;
+  }
+  table, th, td {
+    font-size: .97em;
+  }
+}
+footer {
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0 10px 0;
+  margin-top: auto;
+  width: 100%;
+}
+footer a {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact label {
+  margin-bottom: 1.5px;
+  font-weight: bold;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea,
+.contact select {
+  padding: 7px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+.contact textarea {
+  resize: vertical;
+}
+.contact .checkbox-group, .contact .radio-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.contact button[type="submit"] {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.contact button[type="submit"]:hover {
+  background: #1e40af;
+}
